@@ -441,7 +441,7 @@
     function resize() {
       const scale = window.devicePixelRatio || 1;
       const width = canvas.clientWidth;
-      const height = Math.max(560, Math.min(950, width*1.85));
+      const height = Math.max(650, Math.min(window.innerHeight - 70, width*2.2))(560, Math.min(950, width*1.85));
       canvas.height = height*scale;
       canvas.width = width*scale;
       ctx.setTransform(scale,0,0,scale,0,0);
