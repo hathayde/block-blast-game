@@ -7,7 +7,7 @@
   <style>
     :root { --bg:#0b1020; --panel:#141b34; --text:#e9eefc; --muted:#a9b3d6; --accent:#7c5cff; --grid:#1f2a52; --grid2:#1a2452; }
     html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--bg),#060819);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;}
-    .wrap{max-width:520px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:12px;}
+    .wrap{max-width:560px;margin:0 auto;padding:16px;display:flex;flex-direction:column;gap:12px;}
     header{display:flex;align-items:center;justify-content:space-between;gap:10px;}
     h1{font-size:14px;margin:0;font-weight:700;letter-spacing:.25px;color:var(--text);}
     .btn{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:var(--text);border-radius:10px;padding:8px 12px;font-weight:700;font-size:13px;cursor:pointer;}
@@ -441,7 +441,7 @@
     function resize() {
       const scale = window.devicePixelRatio || 1;
       const width = canvas.clientWidth;
-      const height = Math.max(520, Math.min(650, width*1.2));
+      const height = Math.max(560, Math.min(950, width*1.85));
       canvas.height = height*scale;
       canvas.width = width*scale;
       ctx.setTransform(scale,0,0,scale,0,0);
